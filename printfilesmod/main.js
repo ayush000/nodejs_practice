@@ -9,4 +9,12 @@ var readnfilter=require('./readnfilter');
 //        return ca
 //    }
 //};
-readnfilter(callback)
+var list1;
+var callback=function(err,list){
+    list.forEach(function(file)
+    {
+        console.log(file);
+    })
+};
+//console.log(process.argv[2]);
+readnfilter(process.argv[2],process.argv[3],callback)
