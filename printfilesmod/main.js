@@ -9,7 +9,6 @@ var readnfilter=require('./readnfilter');
 //        return ca
 //    }
 //};
-var list1;
 var callback=function(err,list){
     list.forEach(function(file)
     {
